@@ -1,2 +1,2 @@
-# drf_group_fundraising
-API для сервиса пожертвований.
+# drf_project
+Project for group fundraising.
