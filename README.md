@@ -2,6 +2,7 @@
 Project for group fundraising.
 
 Steps for set up project.
+
 0. Clone in some_folder repository by command 'git clone https://github.com/Gjkan/drf_group_fundraising.git'
 1. Create file .env.dev in some_folder/django/group_fundraising/docker/env. 
 2. Write down project variables in .env.dev using template from file some_folder/django/group_fundraising/docker/env/.env.template.
