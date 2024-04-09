@@ -176,7 +176,7 @@ class PaymentUpdate(generics.UpdateAPIView):
         
 
 class PaymentDelete(generics.DestroyAPIView):
-    """Class for Collect deleting"""
+    """Class for Payment deleting"""
     serializer_class = PaymentSerializer
 
     def destroy(self, request, *args, **kwargs):
