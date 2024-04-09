@@ -9,4 +9,15 @@ Steps for set up project.
 3. Open cmd and go to some_folder/django/group_fundraising.
 4.  Build image. Write in cmd command 'docker compose -f docker-compose.dev.yml build'. Press enter.
 5. Write in cmd command 'docker compose -f docker-compose.dev.yml up' being in the same folder as in step 4. Press enter.
-6. Url 'localhost/api' in browser open group_fundraising api overview.
+6. URL 'localhost/api' in browser open group_fundraising api overview.
+
+URLs
+
+1. 'localhost/api' - group_fundraising api overview.
+2. 'localhost/api/swagger' - swagger documentation.
+3. 'localhost/api/redoc' - redoc documentation.
+
+Management command.
+
+1. 'python manage.py seed' for filling databases with mock data.
+
