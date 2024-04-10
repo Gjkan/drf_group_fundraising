@@ -3,13 +3,14 @@ from django_seed import Seed
 from payment_api.models import Payment, Collect, User
 from django.core.management.base import BaseCommand
 from faker import Faker
+from django.conf import settings
 
 
 class Command(BaseCommand):
     help = 'Command for filling DB by mock data'
 
     def handle(self, *args, **options):
-        number = 20
+        number = 2000
         fake = Faker()
         dates = [fake.date_time_between(start_date='-2y', end_date='+2y') for _ in range(100)]
         seeder = Seed.seeder()
@@ -19,6 +20,7 @@ class Command(BaseCommand):
             {
                 'is_superuser': False,
                 'is_staff': False,
+                'email': settings.DJANGO_SUPERUSER_EMAIL,
             }
         )
         seeder.add_entity(
