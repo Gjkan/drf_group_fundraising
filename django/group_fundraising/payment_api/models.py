@@ -25,7 +25,7 @@ class Collect(models.Model):
     number_of_people = models.IntegerField(verbose_name='Количество людей, участвующих в групповом денежном сборе',
                                            default=0)
     collect_cover = models.ImageField(verbose_name='Обложка группового денежного сбора', null=True, blank=True)
-    finish_collect_date_time = models.DateTimeField(verbose_name='Дата завершения сбора', default=now())
+    finish_collect_date_time = models.DateTimeField(verbose_name='Дата завершения сбора', default=now)
     collect_lent = models.TextField(verbose_name='Лента сбора', default='')
 
     def change_collect_lent(self, payment, operation, old_pay=None):
